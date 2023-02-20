@@ -1,0 +1,8 @@
+ADTs to add:
+
+- List    - Singly linked list
+          - Doubly linked list
+- Queue   - Priority queue
+          - Queue as list
+          - Queue as array
+- Stack
