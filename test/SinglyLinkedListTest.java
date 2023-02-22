@@ -49,16 +49,6 @@ class SinglyLinkedListTest {
         assertTrue(list.contains(42));
     }
 
-    @Test public void testReverse() {
-        SinglyLinkedList list = new SinglyLinkedList();
-        list.addFirst(42);
-        list.addFirst(21);
-        SinglyLinkedList list2 = new SinglyLinkedList();
-        list2.addFirst(21);
-        list2.addFirst(42);
-        assertEquals(list2, list.reverse());
-    }
-
     @Test public void testDisplay() {
         SinglyLinkedList list = new SinglyLinkedList();
         list.addFirst(56);

@@ -1,19 +1,39 @@
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.NoSuchElementException;
+
+/**
+ * Java implementation of the Singly Linked List ADT.
+ * @version 1.0
+ * @author dfrommont
+ */
 
 public class SinglyLinkedList {
 
     private Node head = null;
     private int size = 0;
 
+    /**
+     * SinglyLinkedList() : Constructor for SinglyLinkedList, takes no parameters.
+     */
+
     public SinglyLinkedList() {
     }
+
+    /**
+     * addFirst() : adds Object o to the start of the linked list then increments the size.
+     * @param o     Object to be added
+     */
 
     public void addFirst(Object o) {
         head = new Node(o, head);
         ++size;
     }
+
+    /**
+     * add(int i, Object o) : adds Object o to position i in the linked list.
+     * @param i     Index where object should be added.
+     * @param o     Object o to be added.
+     * @exception IndexOutOfBoundsException If index is too high or low, exception is thrown.
+     */
 
     public void add(int i, Object o) {
         if (size < i) {
@@ -34,6 +54,11 @@ public class SinglyLinkedList {
         }
     }
 
+    /**
+     * addLast(Object o) : adds Object o to the end of the linked list.
+     * @param o     Object o to be added.
+     */
+
     public void addLast(Object o) {
         Node current = head;
         while (current.getNext() != null) {
@@ -41,6 +66,11 @@ public class SinglyLinkedList {
         }
         current.setNext(new Node(o, null));
     }
+
+    /**
+     * removeFirst() : removes and returns the first Node in the list.
+     * @return  Node    the returned Node.
+     */
 
     public Node removeFirst() {
         Node first = head;
@@ -55,6 +85,12 @@ public class SinglyLinkedList {
         }
     }
 
+    /**
+     * remove(int i) : removes and returns Node at position i
+     * @param i     position of Node to be removed.
+     * @return  Node    teh returned Node.
+     */
+
     public Node remove(int i) {
         if (i < 1 || i > size) {
             throw new IndexOutOfBoundsException("Index i is out of bounds for [1,"+size+"]");
@@ -66,6 +102,11 @@ public class SinglyLinkedList {
             return getNode(i);
         }
     }
+
+    /**
+     * removeLast() : removes and returns the last Node in the linked list.
+     * @return  Node    the returned Node.
+     */
 
     public Node removeLast() {
         return getNode(size);
@@ -83,6 +124,12 @@ public class SinglyLinkedList {
         return temp;
     }
 
+    /**
+     * contains(Object o) : returns true if the linked list contains Object o and false if not.
+     * @param o     the Object to be searched for
+     * @return  boolean     true if the Object was found and false if not.
+     */
+
     public boolean contains(Object o) {
         Node current = head;
         while (current.getNext() != null) {
@@ -94,26 +141,19 @@ public class SinglyLinkedList {
         return false;
     }
 
-    public SinglyLinkedList reverse() {
-        ArrayList<Object> buffer = new ArrayList<>();
-        Node current = head;
-        while (current != null) {
-            buffer.add(current.getValue());
-            current = current.getNext();
-        }
-        Collections.reverse(buffer);
-        SinglyLinkedList l2 = new SinglyLinkedList();
-        Node tail = new Node(buffer.get(1), null);
-        for (Object item : buffer) {
-            Node temp = new Node(item, tail);
-            l2.addFirst(temp);
-        }
-        return l2;
-    }
+    /**
+     * size() : returns the size of the linked list.
+     * @return  int     the size of the linked list.
+     */
 
     public int size() {
         return size;
     }
+
+    /**
+     * display() : returns a string of all the Object values held by the linked list.
+     * @return  String  a String of the values held in order.
+     */
 
     public String display() {
         StringBuilder out = new StringBuilder();

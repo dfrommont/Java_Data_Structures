@@ -12,7 +12,5 @@ public class Main {
         list.remove(2);
         list.contains(1);
         list.size();
-        SinglyLinkedList list2 = list.reverse();
-        list2.display();
     }
 }
