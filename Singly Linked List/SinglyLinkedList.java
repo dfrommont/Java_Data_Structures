@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 
 public class SinglyLinkedList {
 
-    private Node head = null;
+    private SingleNode head = null;
     private int size = 0;
 
     /**
@@ -24,7 +24,7 @@ public class SinglyLinkedList {
      */
 
     public void addFirst(Object o) {
-        head = new Node(o, head);
+        head = new SingleNode(o, head);
         ++size;
     }
 
@@ -43,13 +43,13 @@ public class SinglyLinkedList {
         } else if (i == size) {
             addLast(o);
         } else {
-            Node current = head;
+            SingleNode current = head;
             int count = 0;
             while (current.getNext() != null && count < i) {
                 current = head.getNext();
                 ++count;
             }
-            Node temp = new Node(o, current.getNext());
+            SingleNode temp = new SingleNode(o, current.getNext());
             current.setNext(temp);
         }
     }
@@ -60,11 +60,11 @@ public class SinglyLinkedList {
      */
 
     public void addLast(Object o) {
-        Node current = head;
+        SingleNode current = head;
         while (current.getNext() != null) {
             current = current.getNext();
         }
-        current.setNext(new Node(o, null));
+        current.setNext(new SingleNode(o, null));
     }
 
     /**
@@ -72,12 +72,12 @@ public class SinglyLinkedList {
      * @return  Node    the returned Node.
      */
 
-    public Node removeFirst() {
-        Node first = head;
+    public SingleNode removeFirst() {
+        SingleNode first = head;
         if (head == null) {
             throw new NoSuchElementException();
         } else {
-            Node temp = head;
+            SingleNode temp = head;
             head = head.getNext();
             temp.setNext(null);
             --this.size;
@@ -91,7 +91,7 @@ public class SinglyLinkedList {
      * @return  Node    teh returned Node.
      */
 
-    public Node remove(int i) {
+    public SingleNode remove(int i) {
         if (i < 1 || i > size) {
             throw new IndexOutOfBoundsException("Index i is out of bounds for [1,"+size+"]");
         } else if (i == 1) {
@@ -108,18 +108,18 @@ public class SinglyLinkedList {
      * @return  Node    the returned Node.
      */
 
-    public Node removeLast() {
+    public SingleNode removeLast() {
         return getNode(size);
     }
 
-    private Node getNode(int size) {
-        Node current = head;
+    private SingleNode getNode(int size) {
+        SingleNode current = head;
         int i = 0;
         while (current.getNext() != null && i+1 < size) {
             current = current.getNext();
             ++i;
         }
-        Node temp = current.getNext();
+        SingleNode temp = current.getNext();
         current.setNext(null);
         return temp;
     }
@@ -131,7 +131,7 @@ public class SinglyLinkedList {
      */
 
     public boolean contains(Object o) {
-        Node current = head;
+        SingleNode current = head;
         while (current.getNext() != null) {
             if (current.equals(o)) {
                 return true;
@@ -157,7 +157,7 @@ public class SinglyLinkedList {
 
     public String display() {
         StringBuilder out = new StringBuilder();
-        Node current = head;
+        SingleNode current = head;
         while (current.getNext() != null) {
             out.append(current.getValue()).append(", ");
             current = current.getNext();

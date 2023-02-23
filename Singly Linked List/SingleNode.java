@@ -2,10 +2,10 @@
  * Node class creates objects tha hold an Object value and a pointer to another 'next' Node.
  */
 
-public class Node {
+public class SingleNode {
 
     private Object value;
-    private Node next;
+    private SingleNode next;
 
     /**
      * Node(Object value, Node next) : Constructor for Node which takes a value and next Node.
@@ -13,7 +13,7 @@ public class Node {
      * @param next      the next Node, can also be null.
      */
 
-    public Node(Object value, Node next) {
+    public SingleNode(Object value, SingleNode next) {
         this.value = value;
         this.next = next;
     }
@@ -23,7 +23,7 @@ public class Node {
      * @return  Node    the next Node.
      */
 
-    public Node getNext() {
+    public SingleNode getNext() {
         return next;
     }
 
@@ -32,7 +32,7 @@ public class Node {
      * @param next      the Node to be set as next.
      */
 
-    public void setNext(Node next) {
+    public void setNext(SingleNode next) {
         this.next = next;
     }
 

@@ -1,4 +1,4 @@
-public class Main {
+public class SingleMain {
 
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
