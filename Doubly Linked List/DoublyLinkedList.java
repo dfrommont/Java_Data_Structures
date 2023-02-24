@@ -1,20 +1,38 @@
 import java.util.NoSuchElementException;
 
+/**
+ * Implementation of Doubly Linked LIst ADT
+ * @version 1.0
+ * @author dfrommont
+ */
 public class DoublyLinkedList {
 
     private DoubleNode head = null;
     private int size = 0;
 
+    /**
+     * DoublyLinkedList() : Constructor for DoublyLinkedList. Takes no parameters.
+     */
     public DoublyLinkedList() {
 
     }
 
+    /**
+     * addFirst(Object o) : adds Object o to the start of the list.
+     * @param o     the Object to be added.
+     */
     public void addFirst(Object o) {
         DoubleNode temp = new DoubleNode(head, null, 0);
         temp.setPrev(temp.getNext());
         head = temp;
         ++this.size;
     }
+
+    /**
+     * add(int i, Object o) : adds Object o to position i in the list.
+     * @param i     the position to add the object to.
+     * @param o     the Object to be added.
+     */
 
     public void add(int i, Object o) {
         if (size < i) {
@@ -37,6 +55,11 @@ public class DoublyLinkedList {
         }
     }
 
+    /**
+     * addLast(Object o) : adds Object o to teh end of the list.
+     * @param o     the object to be added.
+     */
+
     public void addLast(Object o) {
         DoubleNode current = head;
         while (current.getNext() != null) {
@@ -46,6 +69,11 @@ public class DoublyLinkedList {
         current.setNext(temp);
         ++this.size;
     }
+
+    /**
+     * removeFirst() : removes and returns the first Object in the list.
+     * @return  DoubleNode      the returned DoubleNode.
+     */
 
     public DoubleNode removeFirst() {
         if (head == null) {
@@ -59,6 +87,12 @@ public class DoublyLinkedList {
         }
     }
 
+    /**
+     * remove(int i) : removes and returns the Object at position i.
+     * @param i     the position of the Object to be removed in the list.
+     * @return  DoubleNode      the returned DoubleNode.
+     */
+
     public DoubleNode remove(int i) {
         if (i < 1 || i > size) {
             throw new IndexOutOfBoundsException("Index i is out of bounds for [1,"+size+"]");
@@ -70,6 +104,11 @@ public class DoublyLinkedList {
             return getNode(i);
         }
     }
+
+    /**
+     * removeLast() : removes and return sthe last DoubleNode in the list.
+     * @return  DoubleNode      the returned DoubleNode
+     */
 
     public DoubleNode removeLast() {
         return getNode(size);
@@ -87,6 +126,12 @@ public class DoublyLinkedList {
         return temp;
     }
 
+    /**
+     * contains(Object o) : returns true if the Object is in the list and false if not.
+     * @param o     the Object to be searched for.
+     * @return  boolean     true if the Object was found, false if not.
+     */
+
     public boolean contains(Object o) {
         DoubleNode current = head;
         while (current.getNext() != null) {
@@ -98,9 +143,19 @@ public class DoublyLinkedList {
         return false;
     }
 
+    /**
+     * size() : returns the size of the list.
+     * @return  int     the size of the list.
+     */
+
     public int size() {
         return size;
     }
+
+    /**
+     * display() : return sthe contents of the list in a String.
+     * @return  String      the contents of the list.
+     */
 
     public String display() {
         StringBuilder out = new StringBuilder();
