@@ -1,9 +1,7 @@
-import java.util.NoSuchElementException;
-
 /**
  * Implementation of Doubly Linked LIst ADT, uses class DoubleNode.
  * Test class: DoublyLinkedListTest, Main class: DoubleMain.
- * @version 2.0
+ * @version 2.1
  * @author dfrommont
  */
 
@@ -19,11 +17,37 @@ public class DoublyLinkedList {
 
     }
 
+    /**
+     * add(object o) : adds value o to the start of the queue.
+     * @param o     the value to be added.
+     */
+
     public void add(Object o) {
         DoubleNode temp = new DoubleNode(head, null, o);
         head.setPrev(temp);
         head = temp;
         ++size;
+    }
+
+    /**
+     * add(Object o, int i) : adds value o to position i in the queue
+     * @param o     the value to be added.
+     * @param i     the position to add the value at.
+     */
+
+    public void add(Object o, int i) {
+        if (head.getNext() == null) {
+            add(o);
+        } else if (i > size) {
+            System.out.println("Index "+i+" is otu of bounds for list of length "+size);
+        } else {
+            DoubleNode current = head;
+            for (int j = 0; j < i; j++) current = current.getNext();
+            DoubleNode temp = new DoubleNode(current, current.getPrev(), o);
+            current.getPrev().setNext(temp);
+            current.setPrev(temp);
+            ++size;
+        }
     }
 
     /**
@@ -66,7 +90,7 @@ public class DoublyLinkedList {
     }
 
     /**
-     * display() : return sthe contents of the list in a String.
+     * display() : returns the contents of the list in a String.
      * @return  String      the contents of the list.
      */
 

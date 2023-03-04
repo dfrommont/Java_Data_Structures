@@ -12,6 +12,17 @@ class DoublyLinkedListTest {
     }
 
     @Test
+    void add2() {
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(25, 1);
+        System.out.println(list.display());
+        assertEquals(4, list.size());
+    }
+
+    @Test
     void remove() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
