@@ -1,5 +1,7 @@
 /**
  * Node class creates objects tha hold an Object value, a pointer to another 'next' Node and a pointer to the 'prev' Node.
+ * @version 1.0
+ * @author dfrommont
  */
 
 public class DoubleNode {

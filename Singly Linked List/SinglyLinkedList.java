@@ -1,7 +1,8 @@
 import java.util.NoSuchElementException;
 
 /**
- * Java implementation of the Singly Linked List ADT.
+ * Java implementation of the Singly Linked List ADT, uses class SingleNode.
+ * Test class: SinglyLinkedListTest, Main class: SingleMain.
  * @version 1.0
  * @author dfrommont
  */

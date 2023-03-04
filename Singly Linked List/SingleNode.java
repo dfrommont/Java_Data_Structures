@@ -1,5 +1,7 @@
 /**
  * Node class creates objects tha hold an Object value and a pointer to another 'next' Node.
+ * @version 1.0
+ * @author dfrommont
  */
 
 public class SingleNode {
