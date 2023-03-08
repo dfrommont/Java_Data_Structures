@@ -7,7 +7,9 @@ public class BinaryTreeMain {
         System.out.println(tree.preorder());
         System.out.println(tree.inorder());
         System.out.println(tree.postorder());
-        System.out.println(tree.remove(13).getValue());
+        System.out.println(tree.remove(16).getValue());
         System.out.println(tree.inorder());
+        System.out.println(tree.size());
+        System.out.println(tree.contains(13));
     }
 }
