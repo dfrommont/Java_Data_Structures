@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Doubly Linked List" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/QueueArray" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BinaryTree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StackArray" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

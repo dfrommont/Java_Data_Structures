@@ -1,6 +1,6 @@
 /**
  * Java implementation of the Binary Tree ADT using nodes and pointers, uses class TreeNode.
- * Test class: QueueArrayTest, Main class: Main.
+ * Test class: , Main class: BinaryTreeMain.
  * @version 2.1
  * @author dfrommont
  */

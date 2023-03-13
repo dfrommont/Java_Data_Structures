@@ -1,5 +1,5 @@
 /**
- * Node class creates objects tha hold an Object value, a pointer to another 'next' Node and a pointer to the 'prev' Node.
+ * DoubleNode class creates object that holds an Object value, a pointer to another 'next' Node and a pointer to the 'prev' Node.
  * @version 1.0
  * @author dfrommont
  */
@@ -11,7 +11,7 @@ public class DoubleNode {
     private Object value;
 
     /**
-     * DoubleNode(DoubleNode next, DoubelNode prev, Object value) : Constructor for DoubleNode that takes a next Node, previous Node and value Object.
+     * DoubleNode(DoubleNode next, DoubleNode prev, Object value) : Constructor for DoubleNode that takes a next Node, previous Node and value Object.
      * @param next      the next DoubleNode
      * @param prev      the previous DoubleNode
      * @param value     the value of the DoubleNode
@@ -69,7 +69,7 @@ public class DoubleNode {
 
     /**
      * setPrev() : sets th value of the previous DoubleNode pointer to a new value.
-     * @param prev      the new previosu DoubleNode pointer.
+     * @param prev      the new previous DoubleNode pointer.
      */
 
     public void setPrev(DoubleNode prev) {
