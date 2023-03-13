@@ -7,5 +7,6 @@ Curent ADTs:
   - Doubly Linked list
   - Queue using array
   - Binary Search Tree
+  - Stack using array
 
 This is open source; forking, copying etc. is permitted.
