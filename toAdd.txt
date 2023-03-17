@@ -1,6 +1,8 @@
 ADTs to add:
 
+- Stack   - Stack as list
 - Queue   - Priority queue
           - Queue as list
-- Stack   - Stack as list
 - Tree
+- Map     - Map as array
+          - Map as doubly Linked List
