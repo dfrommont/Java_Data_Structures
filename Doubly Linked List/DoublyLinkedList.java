@@ -1,7 +1,8 @@
 /**
- * Implementation of Doubly Linked LIst ADT, uses class DoubleNode.
+ * Implementation of Doubly Linked List ADT, uses class DoubleNode.
  * Test class: DoublyLinkedListTest, Main class: DoubleMain.
- * @version 2.1
+ * Class StackList inherits this class
+ * @version 2.2
  * @author dfrommont
  */
 
@@ -102,5 +103,14 @@ public class DoublyLinkedList {
             current = current.getNext();
         }
         return out.toString();
+    }
+
+    /**
+     * head() : returns the the head DoubleNode. Used by StackList which inherits from this class.
+     * @return  DoubleNode      the head of the DoubleLinkedList
+     */
+
+    public DoubleNode head() {
+        return head;
     }
 }
