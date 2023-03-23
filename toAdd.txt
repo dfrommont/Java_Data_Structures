@@ -1,6 +1,5 @@
 ADTs to add:
 
-- Stack   - Stack as list
 - Queue   - Priority queue
           - Queue as list
 - Tree
