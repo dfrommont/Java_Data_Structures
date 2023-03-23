@@ -5,6 +5,9 @@
       <item index="0" class="java.lang.String" itemvalue="org.junit.Test" />
     </list>
   </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/Documentation" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
