@@ -15,7 +15,6 @@ public class DoublyLinkedList {
      * DoublyLinkedList() : Constructor for DoublyLinkedList. Takes no parameters.
      */
     public DoublyLinkedList() {
-
     }
 
     /**
@@ -52,7 +51,7 @@ public class DoublyLinkedList {
     }
 
     /**
-     * remove(int i) : removes and returns the first Object.
+     * remove() : removes and returns the first Object.
      * @return  DoubleNode      the returned DoubleNode.
      */
 
@@ -106,7 +105,7 @@ public class DoublyLinkedList {
     }
 
     /**
-     * head() : returns the the head DoubleNode. Used by StackList which inherits from this class.
+     * head() : returns the the head DoubleNode. Used only by StackList which inherits from this class.
      * @return  DoubleNode      the head of the DoubleLinkedList
      */
 
