@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/BinaryTree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StackArray" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StackList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PriorityQueue" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
