@@ -1,6 +1,6 @@
 /**
  * Node class used by BinaryTree to hold a value and pointers for each node in the tree.
- * @version 1.0
+ * @version 1.1
  * @author dfrommont
  */
 
@@ -12,18 +12,15 @@ public class TreeNode {
     private TreeNode parent;
 
     /**
-     * TreeNode(int value, TreeNode left, TreeNode right, TreeNode parent) : Constructor for TreeNode class which takes a value and pointers
+     * TreeNode(int value, TreeNode left, TreeNode right, TreeNode parent) : Constructor for TreeNode class which takes a value and sets the pointers to null.
      * @param value     the value to be held by the node.
-     * @param left      the pointer for the left child node of this node.
-     * @param right     the pointer for the right child node of this node.
-     * @param parent    the pointer for the parent node of this node.
      */
 
-    public TreeNode(int value, TreeNode left, TreeNode right, TreeNode parent) {
+    public TreeNode(int value) {
         this.value = value;
-        this.left = left;
-        this.right = right;
-        this.parent = parent;
+        this.left = null;
+        this.right = null;
+        this.parent = null;
     }
 
     /**

@@ -1,7 +1,7 @@
 /**
  * Implementation of a Stack ADT using an array, uses class StackNode.
- * Test class: , Main class: StackArrayMain.
- * @version 1.0
+ * Test class: StackArrayTest, Main class: StackArrayMain.
+ * @version 1.1
  * @author dfrommont
  */
 
@@ -25,12 +25,13 @@ public class StackArray {
      * @param value     the value of the StackNode to be added
      */
 
-    public void add(Object value) {
+    public String add(Object value) {
         if (pointer == array.length) {
-            System.out.println("Stack of length "+array.length+" is already full.");
+            return "Stack of length "+array.length+" is already full.";
         } else {
             array[pointer] = new StackNode(value);
             ++pointer;
+            return null;
         }
     }
 
@@ -103,6 +104,6 @@ public class StackArray {
                 ret.append(obj.getValue()).append(", ");
             }
         }
-        return ret.toString();
+        return ret.toString().trim();
     }
 }

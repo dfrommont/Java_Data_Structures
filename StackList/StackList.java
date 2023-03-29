@@ -1,6 +1,6 @@
 /**
  * Implementation of Stack ADT using Doubly Linked Lists, inherits mostly from DoublyLinkedList class.
- * Test class: , Main class: StackListMain.
+ * Test class: StackListTest, Main class: StackListMain.
  * @version 1.0
  * @author dfrommont
  */
@@ -14,7 +14,7 @@ public class StackList extends DoublyLinkedList{
     public StackList() {
     }
 
-    /**
+    /*
      * The following methods are contained within the DoublyLinkedList class and are to be used for this class:
      *
      *     * add(object o) : adds value o to the start of the queue.
@@ -41,7 +41,7 @@ public class StackList extends DoublyLinkedList{
      */
 
     public DoubleNode peek(int i) {
-        if (i >= 0 &&  i < size()) {
+        if (i >= 0 && i < size()) {
             DoubleNode current = head();
             for (int j = 0; j < i; j++) current = current.getNext();
             return current;

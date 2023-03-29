@@ -2,10 +2,11 @@
 A repository containing a number of implementations of Java ADTs.
 The Data Structures also come with JavaDoc comments and test classes using Junit.
 
-Curent ADTs:
+Current ADTs:
   - Singly linked list
   - Doubly Linked list
   - Queue using array
+  - Priority Queue
   - Binary Search Tree
   - Stack using array
   - Stack using Doubly Linked List

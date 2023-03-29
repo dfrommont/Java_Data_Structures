@@ -2,7 +2,7 @@
  * Implementation of Doubly Linked List ADT, uses class DoubleNode.
  * Test class: DoublyLinkedListTest, Main class: DoubleMain.
  * Class StackList inherits this class
- * @version 2.2
+ * @version 2.3
  * @author dfrommont
  */
 
@@ -101,7 +101,7 @@ public class DoublyLinkedList {
             out.append(current.getValue()).append(", ");
             current = current.getNext();
         }
-        return out.toString();
+        return out.toString().trim();
     }
 
     /**

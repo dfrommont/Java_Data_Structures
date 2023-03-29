@@ -3,7 +3,7 @@ public class BinaryTreeMain {
         BinaryTree tree = new BinaryTree();
         int[] array = new int[] {10,13,7,6,16,11};
         tree.add(array);
-        tree.add(new TreeNode(1, null, null, null));
+        tree.add(new TreeNode(1));
         System.out.println(tree.preorder());
         System.out.println(tree.inorder());
         System.out.println(tree.postorder());

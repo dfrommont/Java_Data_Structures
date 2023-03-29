@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class DoublyLinkedListTest {
 
     @Test
-    void add() {
+    void testAdd() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
         assertEquals(1, list.size());
     }
 
     @Test
-    void add2() {
+    void testAdd2() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
         list.add(20);
@@ -23,7 +23,7 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    void remove() {
+    void testRemove() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
         list.add(20);
@@ -32,7 +32,7 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    void contains() {
+    void testContains() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
         list.add(20);
@@ -40,7 +40,7 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    void size() {
+    void testSize() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
         list.add(20);
@@ -48,7 +48,7 @@ class DoublyLinkedListTest {
     }
 
     @Test
-    void display() {
+    void testDisplay() {
         DoublyLinkedList list = new DoublyLinkedList();
         list.add(10);
         list.add(20);

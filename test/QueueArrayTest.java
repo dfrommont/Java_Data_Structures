@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class QueueArrayTest {
 
     @Test
-    void add() {
+    void testAdd() {
         QueueArray que1 = new QueueArray(10);
         que1.add(new Node("10"));
         assertEquals(1, que1.size());
     }
 
     @Test
-    void remove() {
+    void testRemove() {
         QueueArray que1 = new QueueArray(10);
         que1.add(new Node("10"));
         System.out.println(que1.remove());
@@ -20,21 +20,21 @@ class QueueArrayTest {
     }
 
     @Test
-    void peek() {
+    void testPeek() {
         QueueArray que1 = new QueueArray(10);
         que1.add(new Node("10"));
         assertEquals("10", que1.peek(0));
     }
 
     @Test
-    void contains() {
+    void testContains() {
         QueueArray que1 = new QueueArray(10);
         que1.add(new Node("10"));
         assertTrue(que1.contains("10"));
     }
 
     @Test
-    void display() {
+    void testDisplay() {
         QueueArray que1 = new QueueArray(10);
         que1.add(new Node("10"));
         que1.add(new Node("11"));
@@ -43,7 +43,7 @@ class QueueArrayTest {
     }
 
     @Test
-    void size() {
+    void testSize() {
         QueueArray que1 = new QueueArray(10);
         que1.add(new Node("10"));
         que1.add(new Node("11"));

@@ -1,7 +1,7 @@
 ADTs to add:
 
-- Queue   - Priority queue
-          - Queue as list
+- Queue   - Queue as list
 - Tree
 - Map     - Map as array
           - Map as doubly Linked List
+- HashTable

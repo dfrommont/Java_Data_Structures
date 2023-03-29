@@ -1,6 +1,6 @@
 /**
  * Java implementation of the Binary Tree ADT using nodes and pointers, uses class TreeNode.
- * Test class: , Main class: BinaryTreeMain.
+ * Test class: BinaryTreeTest, Main class: BinaryTreeMain.
  * @version 2.1
  * @author dfrommont
  */
@@ -26,7 +26,7 @@ public class BinaryTree {
 
     public void add(int[] array) {
         for (int term : array) {
-            add(new TreeNode(term, null, null, null));
+            add(new TreeNode(term));
         }
     }
 
@@ -181,11 +181,11 @@ public class BinaryTree {
     public String preorder(TreeNode n) {
         String nodes = "";
         if (n != null) {
-            nodes += ", " + n.getValue();
+            nodes += n.getValue() + ",";
             nodes += preorder(n.getLeft());
             nodes += preorder(n.getRight());
         }
-        return nodes;
+        return nodes.trim();
     }
 
     /**
@@ -197,11 +197,11 @@ public class BinaryTree {
         String nodes = "";
         TreeNode n = root;
         if (n != null) {
-            nodes += ", " + n.getValue();
+            nodes += n.getValue() + ",";
             nodes += preorder(n.getLeft());
             nodes += preorder(n.getRight());
         }
-        return nodes;
+        return nodes.trim();
     }
 
     /**
@@ -214,10 +214,10 @@ public class BinaryTree {
         String nodes = "";
         if (n != null) {
             nodes += inorder(n.getLeft());
-            nodes += ", " + n.getValue();
+            nodes += n.getValue() + ",";
             nodes += inorder(n.getRight());
         }
-        return nodes;
+        return nodes.trim();
     }
 
     /**
@@ -230,10 +230,10 @@ public class BinaryTree {
         TreeNode n = root;
         if (n != null) {
             nodes += inorder(n.getLeft());
-            nodes += ", " + n.getValue();
+            nodes += n.getValue() + ",";
             nodes += inorder(n.getRight());
         }
-        return nodes;
+        return nodes.trim();
     }
 
     /**
@@ -247,9 +247,9 @@ public class BinaryTree {
         if (n != null) {
             nodes += postorder(n.getLeft());
             nodes += postorder(n.getRight());
-            nodes += ", " + n.getValue();
+            nodes += n.getValue() + ",";
         }
-        return nodes;
+        return nodes.trim();
     }
 
     /**
@@ -263,7 +263,7 @@ public class BinaryTree {
         if (n != null) {
             nodes += postorder(n.getLeft());
             nodes += postorder(n.getRight());
-            nodes += ", " + n.getValue();
+            nodes += n.getValue() + ",";
         }
         return nodes;
     }
