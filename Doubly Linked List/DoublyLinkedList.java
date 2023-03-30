@@ -1,8 +1,8 @@
 /**
  * Implementation of Doubly Linked List ADT, uses class DoubleNode.
  * Test class: DoublyLinkedListTest, Main class: DoubleMain.
- * Class StackList inherits this class
- * @version 2.3
+ * Class StackList and QueueList inherits this class
+ * @version 2.4
  * @author dfrommont
  */
 
@@ -101,15 +101,34 @@ public class DoublyLinkedList {
             out.append(current.getValue()).append(", ");
             current = current.getNext();
         }
+        out.append(current.getValue()).append(", ");
         return out.toString().trim();
     }
 
     /**
-     * head() : returns the the head DoubleNode. Used only by StackList which inherits from this class.
+     * head() : returns the the head DoubleNode. Used by StackList and QueueList who inherit from this class.
      * @return  DoubleNode      the head of the DoubleLinkedList
      */
 
     public DoubleNode head() {
         return head;
     }
+
+    /**
+     * increment() : increments the size of the list. Used by QueueList which inherits from this class.
+     */
+
+    public void increment() {
+        ++size;
+    }
+
+    /**
+     * setHead(DoubleNode head) : sets the head of the list to a new head. Used by QueueList which inherits from this class.
+     * @param head      the new DoubleNode head of the list
+     */
+
+    public void setHead(DoubleNode head) {
+        this.head = head;
+    }
+
 }

@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/StackArray" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/StackList" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/PriorityQueue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/QueueList" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
