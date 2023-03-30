@@ -2,6 +2,11 @@
 
 A log file containing a history of all the change lists for the repository.
 
+- Mar 30th
+    - QueueList added with JavaDoc comments and test class.
+    - DoublyLinkedList updated to include some new method needed for QueueList
+
+
 - Mar 29th
     - Classes BinaryTree, DoublyLinkedList, PriorityQueue, StackList and StackArray updated.
     - JavaDoc comments added to PriorityQueue and PriorityQueueNode.

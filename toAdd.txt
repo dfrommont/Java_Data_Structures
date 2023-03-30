@@ -1,6 +1,5 @@
 ADTs to add:
 
-- Queue   - Queue as list
 - Tree
 - Map     - Map as array
           - Map as doubly Linked List
