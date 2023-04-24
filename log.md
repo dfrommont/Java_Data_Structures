@@ -2,6 +2,9 @@
 
 A log file containing a history of all the change lists for the repository.
 
+- Apr 22nd
+    - Added Tree as Array pending test class and Javadoc.
+
 - Mar 30th
     - QueueList added with JavaDoc comments and test class.
     - DoublyLinkedList updated to include some new method needed for QueueList
