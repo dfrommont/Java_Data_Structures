@@ -2,6 +2,9 @@
 
 A log file containing a history of all the change lists for the repository.
 
+- Mar 9th
+    - Tidied up file structure.
+
 - Apr 22nd
     - Added Tree as Array pending test class and Javadoc.
 
