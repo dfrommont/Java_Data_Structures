@@ -1,6 +1,1 @@
 ADTs to add:
-
-- Tree
-- Map     - Map as array
-          - Map as doubly Linked List
-- HashTable
